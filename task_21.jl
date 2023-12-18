@@ -15,9 +15,5 @@ function move_recursion!(robot, side, n::Int = 0)
     return n
 end
 
-function start_proccess!(robot)
-    move_recursion!(robot, Nord)
-end
-
 r = Robot("start_locations\\21.sit", animate=true)
 move_recursion!(r, Nord)

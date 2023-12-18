@@ -13,9 +13,8 @@ function wall_recursion!(robot, side)
         wall_recursion!(robot, side)
         move!(robot, inverse(right(side)))
     else
-        move!(robot,side)
+        move!(robot, side)
     end
-
 end
 
 function custom_along!(robot, side, n, stop_condition::Function)

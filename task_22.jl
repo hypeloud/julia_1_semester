@@ -18,11 +18,6 @@ function move_recursion_double_distance!(robot, side)
     return result
 end
 
-function start_proccess!(robot)
-    result::Bool = move_recursion_double_distance!(robot, Nord)
-    print(result)
-end
-
 r = Robot("start_locations\\22.sit", animate=true)
 result::Bool = move_recursion_double_distance!(r, Nord)
 print(result)
